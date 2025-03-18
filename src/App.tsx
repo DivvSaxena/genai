@@ -59,7 +59,7 @@ const App = () => {
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 p-6 md:p-8 lg:p-12">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h1 className="text-[#296885] text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider mb-4">
+          <h1 className="text-[#0d68a8] text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider mb-4">
             Gen AI Collection
           </h1>
           <p className="text-gray-600 text-lg md:text-xl mb-8">
@@ -104,7 +104,7 @@ const App = () => {
                 }`}
               >
                 {/* Front of card */}
-                <div className="absolute w-full h-full rounded-xl bg-gradient-to-br from-[#296885] to-[#1a4b6b] text-white p-6 flex flex-col items-center justify-center backface-hidden shadow-lg hover:shadow-xl transition-shadow">
+                <div className="absolute w-full h-full rounded-xl bg-gradient-to-br from-[#db3b13] to-[#ee721d] text-white p-6 flex flex-col items-center justify-center backface-hidden shadow-lg hover:shadow-xl transition-shadow">
                   <span className="text-4xl font-bold mb-4">{q.id}</span>
                   <span className="text-5xl opacity-80">?</span>
                 </div>
