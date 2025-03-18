@@ -1,16 +1,35 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@layer base {
+  :root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer components {
+  .card-front {
+    @apply bg-gradient-to-br from-primary to-secondary text-white;
+  }
+  
+  .card-back {
+    @apply bg-white text-primary;
+  }
+  
+  .title {
+    @apply text-primary text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider mb-4 md:mb-6;
+  }
+  
+  .subtitle {
+    @apply text-gray-600 text-lg md:text-xl;
+  }
 }
 
 a {

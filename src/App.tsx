@@ -29,29 +29,33 @@ function App() {
   };
 
   return (
-    <div className="app-container">
-      <div className="header">
-        <h1 className="title">Gen AI Collection</h1>
-        <p className="subtitle">Click on any card to reveal the question</p>
-      </div>
-      <div className="cards-container">
-        {questions.map((q) => (
-          <div
-            key={q.id}
-            className={`card ${flippedCards.includes(q.id) ? 'flipped' : ''}`}
-            onClick={() => toggleCard(q.id)}
-          >
-            <div className="card-inner">
-              <div className="card-front">
-                <span className="card-number">{q.id}</span>
-                <div className="card-icon">?</div>
-              </div>
-              <div className="card-back">
-                <p>{q.question}</p>
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 py-8 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="text-center mb-12 md:mb-16">
+          <h1 className="title">Gen AI Collection</h1>
+          <p className="subtitle">Click on any card to reveal the question</p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8">
+          {questions.map((q) => (
+            <div
+              key={q.id}
+              className={`group perspective-1000 h-64 cursor-pointer ${
+                flippedCards.includes(q.id) ? '[transform-style:preserve-3d] [transform:rotateY(180deg)]' : ''
+              }`}
+              onClick={() => toggleCard(q.id)}
+            >
+              <div className="relative w-full h-full transition-transform duration-500 [transform-style:preserve-3d]">
+                <div className="card-front absolute w-full h-full rounded-xl shadow-lg p-6 flex flex-col items-center justify-center backface-hidden">
+                  <span className="text-4xl font-bold mb-2">{q.id}</span>
+                  <div className="text-5xl opacity-80">?</div>
+                </div>
+                <div className="card-back absolute w-full h-full rounded-xl shadow-lg p-6 flex items-center justify-center backface-hidden [transform:rotateY(180deg)]">
+                  <p className="text-lg font-medium text-center">{q.question}</p>
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )

@@ -143,4 +143,22 @@
 .card-front,
 .card-back {
   transition: all 0.3s ease;
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+}
+
+/* Hover animations */
+@media (hover: hover) {
+  .group:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+  }
 } 
