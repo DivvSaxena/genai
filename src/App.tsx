@@ -11,14 +11,14 @@ const App = () => {
   const [time, setTime] = useState(0);
 
   const questions: Question[] = [
-    { id: 1, question: "Can Delhi Become a Global AI Hub? – What would it take for Delhi to establish itself as a major AI innovation center?" },
-    { id: 2, question: "India’s Role in the Global AI Race – How does India stack up against the US, China, and Europe, and where should it focus?" },
-    { id: 3, question: "Which Industries Will AI Disrupt First? – Are some sectors overhyped, while others are underexplored?" },
-    { id: 4, question: "AI Adoption in Traditional Businesses – Beyond tech startups, how quickly are traditional industries actually integrating AI into operations?" },
-    { id: 5, question: "The Future of AI Jobs – Will AI create more jobs than it replaces, or are we heading for mass displacement?" },
+    { id: 1, question: "Can India move from a service based to manufacturing based in terms of AI? Can our path be different from the internet service model in the 90s?" },
+    { id: 2, question: "What is an interesting usecase of Ai that surprises you the most?" },
+    { id: 3, question: "What is the one AI tool do you use daily?" },
+    { id: 4, question: "Recently, a lot of AI providers are invesing in adding guardrails on their LLMs. Do you think it's a necessary or decorative expenditure?" },
+    { id: 5, question: "Does AI enhance creativity or stunt it, both professionally and personally?" },
     { id: 6, question: "Are AI Agents the Future? – Will autonomous AI agents replace traditional apps and interfaces?" },
-    { id: 7, question: "How Close Are We to True Autonomy? – What are the biggest challenges preventing AI agents from reliably operating in real-world environments?" },
-    { id: 8, question: "Are AI Agents the Future? – Will autonomous AI agents replace traditional apps and interfaces?" }
+    { id: 7, question: "How is AI changing your work?" },
+    { id: 8, question: "What is the biggest Challenges you want to solve with AI?" }
   ];
 
   useEffect(() => {
