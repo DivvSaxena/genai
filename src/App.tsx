@@ -104,7 +104,7 @@ const App = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h1 className="text-[#0d68a8] text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-wider mb-4">
-            Gen AI Collection
+            AI Collective
           </h1>
           <p className="text-gray-600 text-lg md:text-xl mb-8">
             Click on any card to reveal the question
