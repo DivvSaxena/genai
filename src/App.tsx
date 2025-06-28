@@ -10,16 +10,60 @@ const App = () => {
   const [isRunning, setIsRunning] = useState(false);
   const [time, setTime] = useState(0);
 
+  // const questions: Question[] = [
+  //   { id: 1, question: "Can India move from a service based to manufacturing based in terms of AI? Can our path be different from the internet service model in the 90s?" },
+  //   { id: 2, question: "What is an interesting usecase of Ai that surprises you the most?" },
+  //   { id: 3, question: "What is the one AI tool do you use daily?" },
+  //   { id: 4, question: "Recently, a lot of AI providers are invesing in adding guardrails on their LLMs. Do you think it's a necessary or decorative expenditure?" },
+  //   { id: 5, question: "Does AI enhance creativity or stunt it, both professionally and personally?" },
+  //   { id: 6, question: "Are AI Agents the Future? – Will autonomous AI agents replace traditional apps and interfaces?" },
+  //   { id: 7, question: "How is AI changing your work?" },
+  //   { id: 8, question: "What is the biggest Challenges you want to solve with AI?" }
+  // ];
+
   const questions: Question[] = [
-    { id: 1, question: "Can India move from a service based to manufacturing based in terms of AI? Can our path be different from the internet service model in the 90s?" },
-    { id: 2, question: "What is an interesting usecase of Ai that surprises you the most?" },
-    { id: 3, question: "What is the one AI tool do you use daily?" },
-    { id: 4, question: "Recently, a lot of AI providers are invesing in adding guardrails on their LLMs. Do you think it's a necessary or decorative expenditure?" },
-    { id: 5, question: "Does AI enhance creativity or stunt it, both professionally and personally?" },
-    { id: 6, question: "Are AI Agents the Future? – Will autonomous AI agents replace traditional apps and interfaces?" },
-    { id: 7, question: "How is AI changing your work?" },
-    { id: 8, question: "What is the biggest Challenges you want to solve with AI?" }
+    {
+      id: 1,
+      question:
+        "Can India become a leader in making AI chips and hardware instead of just providing services? How is this different from our IT services approach in the 1990s?"
+    },
+    {
+      id: 2,
+      question:
+        "What's the most amazing new AI tool or feature you've seen recently? What makes it special?"
+    },
+    {
+      id: 3,
+      question:
+        "Which AI tool do you use every day and can't work without?"
+    },
+    {
+      id: 4,
+      question:
+        "Many AI companies are adding safety features to their AI models. Do you think these are really needed or just for show?"
+    },
+    {
+      id: 5,
+      question:
+        "Does AI help you be more creative or does it make you less creative, both at work and in your personal life?"
+    },
+    {
+      id: 6,
+      question:
+        "Will AI agents that work on their own replace the apps and websites we use today?"
+    },
+    {
+      id: 7,
+      question:
+        "How has AI changed the way you do your daily work tasks?"
+    },
+    {
+      id: 8,
+      question:
+        "What big problem would you like AI to solve next - like climate change, finding new medicines, or making education better for everyone?"
+    }
   ];
+  
 
   useEffect(() => {
     let intervalId: number;
@@ -68,7 +112,7 @@ const App = () => {
           
           {/* Timer Section */}
           <div className="flex flex-col items-center gap-4 mb-8">
-            <div className="text-3xl font-bold font-mono text-[#296885]">
+            <div className="text-3xl font-bold font-mono text-[#0d68a8]">
               {formatTime(time)}
             </div>
             <button
@@ -76,7 +120,7 @@ const App = () => {
               className={`px-6 py-3 rounded-lg font-semibold text-white transition-all transform hover:scale-105 ${
                 isRunning
                   ? 'bg-red-500 hover:bg-red-600'
-                  : 'bg-[#296885] hover:bg-[#1a4b6b]'
+                  : 'bg-[#db3b13] hover:bg-[#ee721d]'
               }`}
             >
               {isRunning ? 'Stop & Reset' : 'Start Quiz'}
@@ -111,7 +155,7 @@ const App = () => {
                 
                 {/* Back of card */}
                 <div className="absolute w-full h-full rounded-xl bg-white p-6 flex items-center justify-center backface-hidden shadow-lg rotate-y-180">
-                  <p className="text-[#296885] text-lg font-medium text-center">
+                  <p className="text-[#db3b13] text-lg font-medium text-center">
                     {q.question}
                   </p>
                 </div>
