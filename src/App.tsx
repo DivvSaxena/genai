@@ -25,42 +25,42 @@ const App = () => {
     {
       id: 1,
       question:
-        "Can India become a leader in making AI chips and hardware instead of just providing services? How is this different from our IT services approach in the 1990s?"
+        "Can India Become a Leader in Making AI Chips and Hardware?"
     },
     {
       id: 2,
       question:
-        "What's the most amazing new AI tool or feature you've seen recently? What makes it special?"
+        "What's the Most Impressive New AI Tool or Feature You've Seen Recently?"
     },
     {
       id: 3,
       question:
-        "Which AI tool do you use every day and can't work without?"
+        "Which AI Tool Do You Use Daily and Can't Live Without?"
     },
     {
       id: 4,
       question:
-        "Many AI companies are adding safety features to their AI models. Do you think these are really needed or just for show?"
+        "Why Are So Many AI Safety Features Added to Models?"
     },
     {
       id: 5,
       question:
-        "Does AI help you be more creative or does it make you less creative, both at work and in your personal life?"
+        "Has AI Made You More or Less Creative?"
     },
     {
       id: 6,
       question:
-        "Will AI agents that work on their own replace the apps and websites we use today?"
+        "Could AI Agents Replace Apps and Websites in the Next Few Years?"
     },
     {
       id: 7,
       question:
-        "How has AI changed the way you do your daily work tasks?"
+        "In What Ways Has AI Changed Your Daily Work or Study Habits?"
     },
     {
       id: 8,
       question:
-        "What big problem would you like AI to solve next - like climate change, finding new medicines, or making education better for everyone?"
+        "What Global Problem Would You Like AI to Solve Next?"
     }
   ];
   
