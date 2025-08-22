@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const linkedInText = `Just got out of @The AI Collective Delhi summit and wow, that was intense! 🧠
+const linkedInText = `Just got out of @The AI Collective Delhi summit and wow, that was intense!
 We actually tackled the messy stuff today separating real AI breakthroughs from marketing fluff, figuring out when students should (and shouldn't) lean on these tools, and hearing founders get brutally honest about where they're burning cash on AI experiments. The confessions round was unreal people admitting to some truly bizarre ChatGPT conversations. And that rapid-fire about backprop vs crush signals? Yeah, that one stung 😂
 Walked away with actual insights instead of the usual tech event buzzwords. Delhi's AI crowd doesn't mess around.
 Shoutout to the crew who put this together: @Chappy Asel @Divv Saxena @Catherine McMillan @Alex Barnes @Dhruv Pamneja @Khushpreet Kaur @Deepankar Anand @Rohan Khanna
