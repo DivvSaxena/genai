@@ -21,48 +21,61 @@ const App = () => {
   //   { id: 8, question: "What is the biggest Challenges you want to solve with AI?" }
   // ];
 
+  
+
+
+
+
+
+
+
+
+// Will AI drive innovation in product design as much as it does in production?
+
   const questions: Question[] = [
     {
       id: 1,
       question:
-        "Can India Become a Leader in Making AI Chips and Hardware?"
+        "What is the most surprising AI application you've encountered recently?"
     },
     {
       id: 2,
       question:
-        "What's the Most Impressive New AI Tool or Feature You've Seen Recently?"
+        "How is AI changing the way you work on a daily basis?"
     },
     {
       id: 3,
       question:
-        "Which AI Tool Do You Use Daily and Can't Live Without?"
+        "Do you think AI enhances human creativity or limits it?"
     },
     {
       id: 4,
       question:
-        "Why Are So Many AI Safety Features Added to Models?"
+        "What's one AI tool you can't live without and why?"
     },
     {
       id: 5,
       question:
-        "Has AI Made You More or Less Creative?"
+        "Should there be more regulations on AI development and deployment?"
     },
     {
       id: 6,
       question:
-        "Could AI Agents Replace Apps and Websites in the Next Few Years?"
+        "Will AI agents eventually replace traditional apps and websites?"
     },
     {
       id: 7,
       question:
-        "In What Ways Has AI Changed Your Daily Work or Study Habits?"
+        "What's the biggest challenge AI needs to solve in the next 5 years?"
     },
     {
       id: 8,
       question:
-        "What Global Problem Would You Like AI to Solve Next?"
+        "How do you see AI impacting education and learning?"
     }
   ];
+
+  
   
 
   useEffect(() => {
